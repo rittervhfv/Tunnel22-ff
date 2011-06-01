@@ -1,0 +1,7 @@
+<!ENTITY tunnel22.label "Open new ssh tunnel...">
+<!ENTITY tunnel22Context.accesskey "Y">
+<!ENTITY tunnel22ToolbarButton.label "Your Toolbar Button">
+<!ENTITY tunnel22ToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY tunnel22Sidebar.label "Your Sidebar">
+<!ENTITY tunnel22Toolbar.name  "example">
+<!ENTITY tunnel22Toolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &tunnel22Toolbar.name;">

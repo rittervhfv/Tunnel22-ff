@@ -1,0 +1,7 @@
+<!ENTITY tunnel22ConnectionSetup.label "SSH Tunnel setup">
+<!ENTITY tunnel22ConnectionSetup.desc "Connection details">
+<!ENTITY tunnel22ConnectionSetup.host "Host">
+<!ENTITY tunnel22ConnectionSetup.uname "Username">
+<!ENTITY tunnel22ConnectionSetup.sport "Local port">
+<!ENTITY tunnel22ConnectionSetup.dport "Remote port (tunnel destination)">
+<!ENTITY tunnel22ConnectionSetup.saveCheckbox "Save connection details">

@@ -1,0 +1,4 @@
+Tunnel22 is a Firefox extension that allows the creation of SSH tunnels from the browser window. It contains a built-in SSH client (JSch) so no need for extra SSH software. Because jsch is Java based, a working Java plug-in is required.
+
+Tunnel22 uses JSch, a java implementation of an ssh client licensed under a BSD-style license. See the file JSch-LICENSE for details.
+

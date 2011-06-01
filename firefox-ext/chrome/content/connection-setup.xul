@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!-- Extremely recommended to keep this css include!! -->
+<!DOCTYPE dialog SYSTEM "chrome://tunnel22/locale/connection-setup.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   id="tunnel22_tunnelSetup" title="tunnel22 tunnel setup"
+   buttons="accept,cancel"
+   buttonlabelcancel="Cancel"
+   buttonlabelaccept="Ok"
+   ondialogaccept="return doOK();"
+   ondialogcancel="return doCancel();">
+
+   <script type="application/javascript" src="chrome://tunnel22/content/connection-setup.js"/>
+
+  <dialogheader title="&tunnel22ConnectionSetup.label;" description="&tunnel22ConnectionSetup.desc;"/>
+
+  <vbox>
+    <groupbox align="start">
+      <label value="&tunnel22ConnectionSetup.host;" control="host"/>
+      <textbox id="host"/>
+      <label value="&tunnel22ConnectionSetup.uname;" control="uname"/>
+      <textbox id="uname"/>
+      <label value="&tunnel22ConnectionSetup.sport;" control="s_port"/>
+      <textbox id="s_port"/>
+      <label value="&tunnel22ConnectionSetup.dport;" control="d_port"/>
+      <textbox id="d_port"/>
+      <checkbox id="save_conn" label="&tunnel22ConnectionSetup.saveCheckbox;"/>
+    </groupbox>
+  </vbox>
+</dialog>

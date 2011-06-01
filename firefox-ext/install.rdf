@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>tunnel22@libre-infosec.co.uk</em:id>
+    <em:unpack>true</em:unpack>
+    <em:type>2</em:type>
+    <em:name>Tunnel22</em:name>
+    <em:version>0.1</em:version>
+    <em:creator>Hugo @ Libre-Infosec</em:creator>
+    <!--<em:contributor>Hugo Ritter Vazquez</em:contributor>-->
+    <em:description>Forwarder</em:description>
+    <em:aboutURL>chrome://tunnel22/content/about.xul</em:aboutURL>
+    <!--<em:optionsURL>chrome://tunnel22/content/options.xul</em:optionsURL>-->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>4.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

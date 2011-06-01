@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://tunnel22/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://tunnel22/locale/overlay.dtd">
+<overlay id="tunnel22-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="ff-overlay.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="tunnel22-strings" src="chrome://tunnel22/locale/overlay.properties"/>
+  </stringbundleset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="tunnel22-menu" label="&tunnel22.label;"
+              oncommand="tunnel22.onMenuItemCommand(event);"/>
+  </menupopup>
+
+<!--
+  <toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="tunnel22-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+    label="&tunnel22ToolbarButton.label;" tooltiptext="&tunnel22ToolbarButton.tooltip;"
+    oncommand="tunnel22.onToolbarButtonCommand()"/>
+  </toolbarpalette>
+
+  <toolbox id="navigator-toolbox">
+    <toolbar class="chromeclass-toolbar" toolbarname="&tunnel22Toolbar.name;" customizable="true" id="tunnel22-toolbar">
+      <label value="&tunnel22Toolbar.label;"/>
+    </toolbar>
+  </toolbox>
+-->
+
+
+</overlay>

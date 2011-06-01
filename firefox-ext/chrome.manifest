@@ -1,0 +1,6 @@
+content   tunnel22                 chrome/content/
+skin      tunnel22   classic/1.0   chrome/skin/
+locale    tunnel22   en-US         chrome/locale/en-US/
+
+overlay   chrome://browser/content/browser.xul   chrome://tunnel22/content/ff-overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://tunnel22/skin/overlay.css
