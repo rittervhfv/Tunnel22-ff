@@ -18,7 +18,7 @@
         description="compile the source for tunnel22 back-end" >
     <!-- Compile the java code from ${src} into ${build} -->
         <mkdir dir="${build}/${lib}"/>
-        <ant dir="tunnel22-be" />
+        <ant dir="tunnel22-be" inheritAll="false" inheritRefs="false"/>
   </target>
   <target name="dist" depends="compile"
         description="generate the distribution" >
@@ -26,7 +26,7 @@
           <fileset dir="${src}">
           </fileset>
         </copy>
-        <move file="${dist}/lib" todir="${dist}/java"/>
+        <move file="${tunnel22-be}/dist/lib" todir="${dist}/java"/>
         <copy file="${tunnel22-be}/lib/jsch.jar" todir="${dist}/java/lib" />
         <zip destfile="tunnel22-${version}.xpi" basedir="${dist}" />
 
