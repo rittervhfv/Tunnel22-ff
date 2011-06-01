@@ -5,7 +5,7 @@
   <!-- set global properties for this build -->
   <property name="version" value="1.0"/>
   <property name="src" location="firefox-ext"/>
-  <property name="tunnel22"  location="tunnel22"/>
+  <property name="tunnel22-be"  location="tunnel22-be"/>
   <property name="dist" location="dist"/>
   <property name="build" location="build"/>
   <property name="lib" value="java/lib"/>
@@ -18,7 +18,7 @@
         description="compile the source for tunnel22 back-end" >
     <!-- Compile the java code from ${src} into ${build} -->
         <mkdir dir="${build}/${lib}"/>
-        <ant dir="tunnel22" />
+        <ant dir="tunnel22-be" />
   </target>
   <target name="dist" depends="compile"
         description="generate the distribution" >
@@ -27,7 +27,7 @@
           </fileset>
         </copy>
         <move file="${dist}/lib" todir="${dist}/java"/>
-        <copy file="${tunnel22}/lib/jsch.jar" todir="${dist}/java/lib" />
+        <copy file="${tunnel22-be}/lib/jsch.jar" todir="${dist}/java/lib" />
         <zip destfile="tunnel22-${version}.xpi" basedir="${dist}" />
 
     <!-- Create the distribution directory -->
