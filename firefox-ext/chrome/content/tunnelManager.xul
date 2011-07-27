@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://tunnel22/locale/tunnelManager.dtd">
+
+<dialog onload="refreshTM();" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   id="tunnel22_tm" title="Tunnel Manager"
+   buttons="accept"
+   buttonlabelaccept="Exit"
+   ondialogaccept="return doClose();">
+   
+   <script type="application/javascript" src="chrome://tunnel22/content/tunnelManager.js"/>
+
+<!-- <window id="Tunnel Manager"
+    title="&tm_title;"
+    orient="horizontal"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"> -->
+        
+	<groupbox align="center" orient="horizontal">
+	    <vbox>
+	    	<text value="&tm_desc;" style="font-weight: bold; font-size: x-large;"/>
+	    	<separator class="thin"/>
+	    	<vbox id="TMbox" flex="1" style="overflow:auto">
+			</vbox>
+		    <separator class="thin"/>
+		    <button label="Close all" oncommand="closeTunnels();" />
+	    </vbox>
+	</groupbox>
+</dialog>

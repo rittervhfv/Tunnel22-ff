@@ -155,7 +155,8 @@ var tunnel22 = {
             gBrowser.selectedTab=tunnel22tab;
 //            tunnel22tab.tunnel22Id=''+uname+'@'+host+':'+s_port+'->'+d_port;
             tunnel22tab.tunnel22Id="L|"+host+"|"+uname+"|"+s_port+"|"+d_port;
-            tunnel22tab.addEventListener("TabClose", tunnel22TabRemoved, false);
+// Do we want to close the tunnel with the tab??
+//            tunnel22tab.addEventListener("TabClose", tunnel22TabRemoved, false);
         }
         catch(e){
            alert("passed "+e.toString());
@@ -165,6 +166,11 @@ var tunnel22 = {
 
     }
     //else{alert("no params.out");}
+  },
+
+  openTM: function(e) {
+	  var params={inn:tunnelContainer, out:null}
+	  var tmwindow=window.openDialog("chrome://tunnel22/content/tunnelManager.xul", "tm_window", "chrome,width=600,height=300", params);
   },
 
   onToolbarButtonCommand: function(e) {

@@ -31,7 +31,8 @@ function doOK() {
         uname:document.getElementById("uname").value,
         s_port:document.getElementById("s_port").value,
         d_port:document.getElementById("d_port").value,
-        save_conn:document.getElementById("save_conn").checked};
+        //save_conn:document.getElementById("save_conn").checked}; 
+   		save_conn:false};
    return true;
 }
 

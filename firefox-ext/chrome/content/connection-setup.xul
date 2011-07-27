@@ -25,7 +25,7 @@
       <textbox id="s_port"/>
       <label value="&tunnel22ConnectionSetup.dport;" control="d_port"/>
       <textbox id="d_port"/>
-      <checkbox id="save_conn" label="&tunnel22ConnectionSetup.saveCheckbox;"/>
+<!--       <checkbox id="save_conn" label="&tunnel22ConnectionSetup.saveCheckbox;"/>   -->
     </groupbox>
   </vbox>
 </dialog>

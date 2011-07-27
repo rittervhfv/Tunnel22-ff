@@ -12,6 +12,8 @@
   <menupopup id="menu_ToolsPopup">
     <menuitem id="tunnel22-menu" label="&tunnel22.label;"
               oncommand="tunnel22.onMenuItemCommand(event);"/>
+    <menuitem id="tm-menu" label="&tunnel22.tm;"
+              oncommand="tunnel22.openTM(event);"/>
   </menupopup>
 
 <!--
